@@ -1,0 +1,59 @@
+body {
+	font: 'Raleway', sans-serif;
+    color: rgba(0,0,0,.8);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    top: 15%;
+	background: linear-gradient(to right, rgb(136, 45, 210), rgb(244, 197, 26))
+}
+
+h1 {
+    font: 900 4em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.8);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    width: 100%;
+}
+
+h2 {
+	font: 900 2em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.8);
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.01em;
+
+}
+
+p {
+    font: 900 1em 'Raleway', sans-serif;
+    padding: 10px;
+    color: rgba(0,0,0,1);
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.01em;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  grid-template-rows: 5fr;
+  grid-template-areas:
+    "big txt little";
+}
+
+.big { grid-area: big; }
+
+.txt { 
+    grid-area: txt;
+}
+
+.little { grid-area: little; }
+
+.border {
+    margin-left: 4px;
+    margin-right: 4px;
+    border: 4px solid black;
+}
